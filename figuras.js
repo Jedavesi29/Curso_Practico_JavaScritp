@@ -68,6 +68,34 @@ function calcularAreaCuadrado(){
   document.getElementById("RespuestaeraCuadrado").innerHTML=`${area_cuadardo.toFixed(1)} cm2`
   
   }
+
+  
+  function calcularDescuento(){
+    var total=0;
+
+
+var pago= document.getElementById("pagar").value;
+
+var descuento = document.getElementById("descuento").value;
+
+if (descuento >100 || descuento <0) {
+
+
+    document.getElementById("total").innerHTML=`No puede haber porcentaje mayor que 100 o menor que 0`;
+}
+else{
+
+total = (pago * descuento)/100;
+totalListo= pago - total;
+document.getElementById("descuento_total").innerHTML=`${total.toFixed(1)}`;
+document.getElementById("total").innerHTML=`${totalListo.toFixed(1)}`;
+
+
+}
+
+}
+
+
   
 
 
