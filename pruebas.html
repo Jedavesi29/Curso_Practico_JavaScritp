@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas JavaScript</title>
 </head>
+
 <body>
-<div>
-    <section>
-    <h1>Prueba para tienda OnLine</h1>
+    <div>
+        <section>
+            <h1>Prueba para tienda OnLine</h1>
 
-    <form action="">
+            <form action="">
 
-        <label for="pagar">Valor a pagar</label>
-<input type="number" id="pagar" placeholder="Digite Valor" required   />
+                <label for="pagar">Valor a pagar</label>
+                <input type="number" id="pagar" placeholder="Digite Valor" required />
 
-        <label for="descuento">descuento</label>
-        <input type="number"  id="descuento" placeholder="Digite el descuento" required />
+                <!--  <label for="descuento">descuento</label>
+                <input type="number" id="descuento" placeholder="Digite el descuento" required />-->
+                <label for="cupon">CUPON</label>
+                <select id="cupon" >
+                    <option selected>Seleccione un cupon si aplica</option>
+                    <option value="1">Cupon por cumpleaños</option>
+                    <option value="2">Cupon por cliente del día</option>
+                    <option value="3">Cupon por el más alto</option>
+                    <option value="4">Cupon por el más gordo</option>
+                </select>
 
-       
-<button type="button"  onclick="calcularDescuento()"> Calcular  </button>
-    </form>
-<h1 >Descuento</h1>
-<h1 id="descuento_total">$</h1>
-<h1 >Total a pagar</h1>
-<h1 id="total">$</h1>
-</section>
-</div>
 
-<script src="./prueba.js"></script>
+                <button type="button" onclick="calcularCupon()"> Calcular </button>
+            </form>
+            <h1>Descuento</h1>
+            <h1 id="descuento_total">$</h1>
+            <h1>Total a pagar</h1>
+            <h1 id="total">$</h1>
+        </section>
+    </div>
+
+    <script src="./figuras.js"></script>
 
 </body>
+
 </html>
