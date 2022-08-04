@@ -96,6 +96,8 @@ function calcularDescuento() {
 }
 
 
+//cALCULO PARA EL DECUENTO DE LA TIENDA   ONLINE 
+
 function calcularCupon() {
   var total = 0;
   var descuento = 0;
@@ -123,6 +125,14 @@ function calcularCupon() {
       break;
   }
   console.log("EL descuento es: " + descuento);
+if (pago < 0){
+
+  document.getElementById("total").innerHTML = `El valor total no puede ser menor a 0, o estas en numeros negativos`;
+
+}
+
+else {
+
   if (descuento > 100 || descuento < 0) {
 
 
@@ -138,8 +148,13 @@ function calcularCupon() {
 
   }
 
-
 }
+}
+
+//PRACTICA DE LÑA MEDIA ARITMETICA 
+
+
+
 
 
 
